@@ -19,20 +19,20 @@ public class DocumentController {
 	@Autowired
 	private DocumentRepository documentrepository;
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4201")
 	
 	@GetMapping(value="/Document")
 	public List<Document> AfficherUtilisateurs(){
 		return documentrepository.findAll();
 	}
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4201")
 	@GetMapping(value="/Document/{id}")
 	public Document AfficherUtilisateur(@PathVariable int id){
 		return documentrepository.findById(id);
 	}
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4201")
 	@PostMapping(value="/AddDocument")
 	public Document AddDoctor(@RequestBody Document document){
 		return documentrepository.save(document);

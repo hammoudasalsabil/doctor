@@ -16,7 +16,7 @@ import javax.persistence.Table;
 
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="TYPE_PER",discriminatorType=DiscriminatorType.STRING,length=1)
-public class User {
+public abstract class User {
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;

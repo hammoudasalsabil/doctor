@@ -21,7 +21,7 @@ import com.tassdoc.tassdoc.model.User;
 import io.swagger.annotations.Api;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4201")
 @Api(description = "gestion des Utilisateu")
 public class UserController {
 	
